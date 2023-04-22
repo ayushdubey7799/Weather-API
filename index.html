@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="landingPage">
+        <h1>Weather API</h1>
+        <button id="btn">Fetch Data</button>
+    </div>
+
+
+    <div id="mainPage">
+        <div id="location">
+            <h1>Weather API</h1>
+            <p id="info"></p>
+            <p id="lat"></p>
+            <p id="lon"></p>
+            <div id="map"></div>  
+
+           
+        </div>
+        <div id="data">
+             <h2>Weather Data</h2>
+             <div id="dataContainer">
+                 <p id="locate">Location: </p>
+                 <p id="timezone">TimeZone: </p>
+                 <p id="latitude">Lat: </p>
+                 <p id="longitude">Long: </p>
+                 <p id="windSpeed">Wind Speed: </p>
+                 <p id="pressure">Pressure: </p>
+                 <p id="humidity">Humidity: </p>
+                 <p id="windDirection">Wind Direction: </p>
+                 <p id="feels">Feels Like: </p>
+             </div>
+        </div>
+    </div>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyDqpynS-eoF6-mzlPZYPVQx871zXbi3ZhM", v: "weekly"});</script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#landingPage{
+
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    /* display: none; */
+}
+
+h1{
+    width: 100%;
+    font-size: 48px;
+}
+
+#btn{
+    width: 200px;
+    height: 30px;
+}
+
+#mainPage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: none;
+}
+
+#location{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+   
+}
+
+#lat, #lon{
+    color: white;
+}
+#map{
+    
+    height: 300px;
+    width: 90%;
+    border: 1px solid white;
+}
+
+
+#data{
+   
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+}
+
+h2{
+    color: black;
+    margin-left: 20px;
+}
+
+#dataContainer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+
+p{
+    color: black;
+    width: 45%;
+    margin-left: 10px;
+}
+
+#info{
+    display: none;
+}
