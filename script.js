@@ -51,7 +51,7 @@ function showPosition(position) {
 function displayData(weatherData){
     console.log(weatherData.sys.country)
 
-   document.getElementById('locate').innerText += `${weatherData.sys.country}`;
+   document.getElementById('locate').innerHTML += `${weatherData.sys.country}`;
    document.getElementById('timezone').innerHTML += `${weatherData.timezone}`;
    document.getElementById('latitude').innerHTML += `${weatherData.coord.lat}`;
    document.getElementById('longitude').innerHTML += `${weatherData.coord.lon}`;
@@ -70,7 +70,7 @@ async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
 
   map = new Map(document.getElementById("map"), {
-    center: { lat: 27.1766701, lng: 78.0080745 },
+    center: { lat: latitude, lng: longitude },
     zoom: 0,
   });
 }
